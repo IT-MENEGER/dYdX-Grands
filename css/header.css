@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #1c1c28;
+}
+.container {
+  max-width: 1250px;
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1370px;
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+  margin-top: 25px;
+  gap: 20px;
+}
+.nav__wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+}
+.nav-link,
+.nav-btn {
+  padding: 12px 16px;
+  display: inline-block;
+  border-radius: 7.5px;
+  color: #C8C7D8;
+  font-family: Space Mono, "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 3px;
+}
+.nav-btn {
+  height: fit-content;
+  background-color: #6966ff;
+  border: none;
+  text-wrap: nowrap;
+  color: #FFF;
+}
+.nav-link--active{
+  color: #FFFFFF;
+}
+
+.nav__wrapper .menubar {
+  font-size: 18px;
+  color: #fff;
+  display: none;
+
+  .fa-xmark{
+    display: none;
+  }
+}
+.nav__list-item {
+  display: none;
+}
+
+
+@media screen and (max-width: 992px) {
+  .nav-btn span {
+    display: none;
+  }
+  .nav-link {
+    padding: 12px 10px;
+  }
+}
+@media screen and (max-width: 756px) {
+  .nav__list {
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    right: 0;
+    left: 0;
+    top: 90px;
+    bottom: 0;
+    text-align: center;
+    align-content: center;
+    background: #393953;
+    padding-top: 20px;
+    display: none;
+    z-index: 10;
+  }
+  header {
+    padding: 20px 0;
+  }
+  #menubar:checked + header .nav .nav__wrapper .nav__list {
+    display: block;
+  }
+  #menubar:checked + header .nav .nav__wrapper .menubar .fa-bars {
+    display: none;
+  }
+  #menubar:checked + header .nav .nav__wrapper .menubar .fa-xmark {
+    display: block;
+    font-size: 24px;
+  }
+  #menubar:checked + header{
+    background-color: #393953;
+  }
+  .nav {
+    margin-top: 0;
+  }
+  .nav__wrapper .menubar {
+    display: block;
+    font-size: 20px;
+  }
+  .nav__list-item {
+    display: block;
+    margin-top: 30px;
+
+    .fab {
+      font-size: 22px;
+      padding: 10px;
+      color: #c8c7d8;
+    }
+  }
+}

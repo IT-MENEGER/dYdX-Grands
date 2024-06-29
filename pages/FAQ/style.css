@@ -1,0 +1,63 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.faq{
+    margin-bottom: 80px;
+}
+.faq__title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -0.022em;
+  text-align: center;
+  margin: 80px auto;
+  color: #FFFFFF;
+}
+.cards{
+    max-width: 808px;
+    margin: auto;
+
+}
+.card{
+    color: #FFFFFF;
+    padding: 24px 0;
+    height: 72px;
+    overflow: hidden;
+    justify-content: space-between;
+    border-top: 1px solid #393953;
+}
+.fa-plus{
+    float: right;
+    margin-left: 16px;
+    font-size: 30px;
+}
+.card__text{
+font-size: 18px;
+font-weight: 450;
+line-height: 24px;
+letter-spacing: -0.014em;
+text-align: left;
+color: #FFFFFF;
+margin-bottom: 24px;
+}
+.card__title{
+    color: #FFFFFF;
+font-size: 24px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: -0.019em;
+text-align: left;
+margin-bottom: 40px;
+}
+
+input[type = radio]:checked + .card .card__text .fa-plus{
+    transform: rotateZ(45deg);
+    transition: 0.5s;
+}
+input[type = radio]:checked + .card {
+    height: auto;
+    transition: 1s;
+}
+.cards:not(.cards:first-child){
+    margin-top: 40px;
+}

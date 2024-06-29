@@ -1,0 +1,106 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+.program{
+    margin: 80px 0;
+}
+.program__title{
+font-size: 60px;
+font-weight: 700;
+line-height: 72px;
+letter-spacing: -0.022em;
+text-align: center;
+color: #FFFFFF;
+}
+
+.program__list {
+    height: 50px;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    /* justify-content: center; */
+    color: #fff;
+    margin: 40px auto;  
+    overflow-x: scroll;
+    scrollbar-width: none; 
+  }
+  .list__item{
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: -0.011em;
+text-align: center;
+padding: 12px 16px;
+
+  }
+  .list__item:first-child {
+    padding: 12px 18px;
+    border-radius: 7.2px;
+    background-color: #393953;
+  }
+.cards{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+}
+.card{
+    margin-bottom: 24px;
+    background-color: #393953;
+    padding: 24px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.card__title{
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: -0.017em;
+text-align: left;
+color: #FFF;
+}
+.card__subtitle{
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: #C8C7D8;
+margin: 8px 0 16px;
+}
+.card__def{
+    color: #FFFFFF;
+font-size: 16px;
+font-weight: 450;
+line-height: 24px;
+letter-spacing: -0.011em;
+text-align: left;
+
+}
+.cost{
+    color: #FFFFFF;
+
+    .fa-arrow-up-right-from-square{
+        color: #A59EBA;
+        margin-left: 16px;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    .card__title{
+        font-size: 16px;
+    }
+    .card__subtitle{
+        font-size: 14px;
+    }
+    .card__text{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .program__title{
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
